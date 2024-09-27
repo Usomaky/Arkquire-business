@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Fraunces:wght@400;500;600;700;800;900&display=swap');
+
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+
+   @media (max-width: 407px) {
+  .w-20 {
+    width: 3rem;
+  }
+}
+
+ 
+}
+
+
+html{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+body{
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+}
+
+
+input[type="radio"].eradio {
+  appearance: none;
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="radio"]:checked + .radio-editt {
+  /* background-color: #ccfee1; */
+  border: 1px solid black;
+}
+
+.f11 {
+    font-size: 11px;
+}
+.f8 {
+    font-size: 8px;
+}
+
+.f9 {
+    font-size: 9px;
+}
+
+.mt-6-ed {
+    margin-top: 60px !important;
+
+}
+.mt-2-ed {
+    margin-top: 20px !important;
+
+}
+
+
+ @media (min-width: 364px) {
+.h-48-bs {
+    height: 120px;
+
+}
+}
+
+ @media (min-width: 379px) {
+.h-48-ed {
+    height: 205px;
+
+}
+}
+
+ @media (min-width: 462px) {
+/* .mt-6-ed {
+    margin-top: 5px !important;
+
+} */
+.h-48-ed {
+    height: 160px;
+
+}
+
+}
+
+@media (min-width: 490px) {
+.h-48-bs {
+    height: 80px;
+
+}
+}
+ @media (min-width: 635px) {
+.h-48-ed {
+    height: 115px;
+
+}
+
+}
+
+ @media (min-width: 768px) {
+.h-48-ed {
+    height: 190px;
+
+}
+.h-48-bs {
+    height: 150px;
+
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .w-edit.md\:w-6\/12 {
+    width: 61%;
+  }
+}
+
+ @media (min-width: 878px) {
+.h-48-bs {
+    height: 105px;
+
+}
+
+}
+ @media (min-width: 887px) {
+.h-48-ed {
+    height: 130px;
+
+}
+
+}
+ @media (min-width: 1024px) {
+.h-48-ed {
+    height: 190px;
+
+}
+.h-48-bs {
+    height: 150px;
+
+}
+
+}
+ @media (min-width: 1044px) {
+.h-48-bs {
+    height: 105px;
+
+}
+
+}
+ @media (min-width: 1259px) {
+.h-48-ed {
+    height: 135px;
+
+}
+
+}
+ @media (min-width: 1280px) {
+.h-48-ed {
+    height: 250px;
+
+}
+
+}
+
+
+ @media (min-width: 1287px) {
+.h-48-ed {
+    height: 200px;
+
+}
+
+}
+ @media (min-width: 1639px) {
+.h-48-ed {
+    height: 150px;
+
+}
+
+}
+ @media (min-width: 1995px) {
+.h-48-bs {
+    height: 70px;
+
+}
+
+}
+
+ @media (max-width: 378px) {
+.h-48-ed {
+    height: 250px;
+
+}
+} @media (max-width: 363px) {
+.h-48-bs {
+    height: 155px;
+
+}
+}
+
+
+
+ @media (max-width: 407px) {
+.w-full section.flex.w-full.pt-4.pb-8.wrapper{
+    font-size: 12px;
+  }
+
+  .f-ed{
+    font-size: 12px;
+
+  }
+}
+
+  @media (max-width: 350px) {
+ .f11 {
+    font-size: 9px;
+}
+.f8 {
+    font-size: 6px;
+}
+.f9 {
+    font-size: 7px;
+}
+}
+
+@media (max-width: 325px) {
+   .w-full section.flex.w-full.pt-4.pb-8.wrapper{
+    font-size: 11.5px;
+  }
+}
+@media (max-width: 327px) {
+  .btn-ed {
+    padding-left: 0 !important;
+  }
+}
+
+.trans{
+    @apply transition-all ease-in-out duration-300
+}
+
+
+@layer primevue {
+
+     /* .p-radiobutton .p-radiobutton-box {
+        border: unset !important;
+        display: none !important;
+     } */
+    .p-tabview .p-tabview-nav  {
+       @apply absolute left-[2.5rem] sm:left-[2.5rem]  md:left-[3.5rem] lg:left-[5.5rem]  xl:left-[9.5rem];
+    }
+
+      .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    color: #6b7280 !important;
+    font-weight: 500 !important;
+  }
+  .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    order: 1;
+  }
+
+   .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link,  .p-accordion .p-accordion-header .p-accordion-header-link {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 426px) {
+  .p-tabview .p-tabview-nav {
+    font-size: 13px;
+    
+  }
+}
+
+ @media (max-width: 470px) {
+     .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+        padding: 0.95rem !important;
+    }
+}
+  @media (max-width: 384px) {
+  .p-tabview .p-tabview-nav {
+    font-size: 11px;    
+  }
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+        padding: 0.6rem !important;
+    }
+}
+  @media (max-width: 324px) {
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+        padding: 0.5rem !important;
+    }
+}
+
+
+}
+ /* md:block relative -top-[1rem] right-[10.5rem]
+     */
+
+@layer base{
+    h1{
+        @apply font-Fraunces text-5xl font-semibold md:text-6xl
+    }
+    .wrapper{
+        @apply px-4 md:px-8 lg:px-16 xl:px-32
+    }
+    .font-head{
+        @apply font-Fraunces
+    }
+    .font-body{
+        @apply font-DMSans
+    }
+}
+
+@layer components{
+    .btn{
+        @apply rounded-full flex shrink-0 justify-center items-center px-5 py-3 text-sm
+    }
+    .primary{
+        @apply font-semibold bg-primary-500 text-white disabled:cursor-not-allowed disabled:bg-primary-400 disabled:text-primary-200 hover:bg-primary-500/80 transition-all duration-75 ease-in active:scale-95
+    }
+    .stroke{
+        @apply py-2.5 font-medium border border-primary-500 text-primary-400 disabled:cursor-not-allowed disabled:bg-neutral-600 disabled:text-neutral-500 hover:bg-primary-500/80 hover:text-white transition-all duration-75 ease-in active:scale-95
+    }
+    .tbl{
+        @apply w-full
+    }
+    .tbl thead{
+        @apply border-b
+    }
+    .tbl thead th{
+        @apply p-3 text-left text-sm font-medium text-slate-600
+    }
+    .tbl tbody tr{
+        @apply odd:bg-slate-100
+    }
+    .tbl tbody td{
+        @apply p-3 text-sm md:text-xs text-slate-600 text-left whitespace-nowrap font-body
+    }
+    .tbl tbody td span.badge{
+        @apply px-2 py-1 rounded-lg text-xs text-white tracking-wide
+    }
+}
